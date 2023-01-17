@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.courses {
+  padding: 80px 0;
+}
+
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.tabs__caption {
+  margin: 40px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tabs__item-text {
+  display: none;
+  color: red;
+}
+.tabs__item.active {
+  color: red;
+  -webkit-text-decoration: underline 3px;
+          text-decoration: underline 3px;
+  text-underline-offset: 10px;
+}
+.tabs__item.active .tabs__item-text {
+  display: inline;
+}
+.tabs__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+  background: lightblue;
+  padding: 40px;
+  border-radius: 30px;
+}
+.tabs__lvl {
+  width: 220px;
+}
+.tabs__lvl-max {
+  width: 100%;
+  background: #DEDEFF;
+  border-radius: 10px;
+  height: 8px;
+  margin-top: 8px;
+}
+.tabs__lvl-current {
+  height: 100%;
+  background: red;
+  border-radius: 10px;
+}

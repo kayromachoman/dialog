@@ -1,0 +1,71 @@
+.meet{
+  padding-bottom: 100px;
+  position: relative;
+  margin-bottom: 100px;
+  &__video::after{
+    content: '';
+    background: url("../images/meet__bottom.png") center/cover no-repeat;
+    width: 1440px;
+    height: 325px;
+    position: absolute;
+    bottom: -100px;
+    right: -43%;
+    z-index: -3;
+  }
+  &__subtitle{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    right: -30px;
+  }
+
+
+  &__title{
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+  &__video{
+    width: 770px;
+    height: 440px;
+    border-radius: 30px;
+    background: url("../images/video.png") center/cover no-repeat;
+    position: relative;
+    margin: 0 auto;
+    &-button{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+    &::before{
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      background: #3035C460;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+  }
+
+
+}
+
+.meet__subtitle::before{
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: #E6514A;
+  position: absolute;
+  left: 490px;
+  top: 8px;
+}

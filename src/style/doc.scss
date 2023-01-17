@@ -1,0 +1,38 @@
+.doc{
+  background: #3035C4;
+  border-radius: 20px;
+  padding: 100px 70px 100px 550px;
+  position: relative;
+  margin-bottom: 186px;
+  &__img{
+    position: absolute;
+    left: 70px;
+    top: -46px;
+    width: 400px;
+    height: 533px;
+  }
+  &__title{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 130%;
+    color: white;
+    margin-bottom: 25px;
+  }
+  &__text{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+  }
+  &__btn{
+    padding: 16px 60px;
+    background: #E6514A;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: 700;
+  }
+}

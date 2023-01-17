@@ -1,0 +1,85 @@
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+  margin-bottom: 160px;
+  button:hover{
+    cursor: pointer;
+    background: #23283B;
+  }
+  &__card{
+    width: 277.5px;
+    position: relative;
+    &-link{
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      color: #3035C4;
+      position: relative;
+      right: -50px;
+    }
+    &-bonus{
+      display: flex;
+      row-gap: 12px;
+      flex-direction: column;
+      margin-bottom: 45px;
+      height: 170px;
+      &-check{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        display: flex;
+        column-gap: 15px;
+        line-height: 150%;
+      }
+    }
+  }
+  &__card-head{
+    padding: 28px 20px;
+    border: 1px solid lightgrey;
+    margin-bottom: 32px;
+    &-title{
+      color: #3035C4;
+      text-align: center;
+      height: 71px;
+      margin-bottom: 16px;
+      line-height: 22px;
+      &-last{
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 27px;
+      }
+    }
+    &-title-span{
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 49px;
+      text-align: center;
+      color: #3035C4;
+    }
+    &-text{
+      font-weight: 700;
+      line-height: 20px;
+      text-align: center;
+      height: 40px;
+    }
+
+  }
+  .content__card-btn{
+    padding: 16px 72px;
+    background: #E6514A;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    position: relative;
+    right: -30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+}

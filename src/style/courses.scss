@@ -1,0 +1,62 @@
+.courses{
+  padding: 80px 0;
+}
+
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.tabs{
+  &__caption{
+    margin: 40px 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item{
+    &-text{
+      display: none;
+      color: red;
+    }
+    &.active{
+      color: red;
+      .tabs__item-text{
+        display: inline;
+      }
+      text-decoration: underline 3px;
+      text-underline-offset: 10px;
+    }
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background: lightblue;
+    padding: 40px;
+    border-radius: 30px;
+  }
+
+  &__lvl{
+    width: 220px;
+    &-max{
+      width: 100%;
+      background: #DEDEFF;
+      border-radius: 10px;
+      height: 8px;
+      margin-top: 8px;
+    }
+    &-current{
+      height: 100%;
+      background: red;
+      border-radius: 10px;
+    }
+  }
+}
